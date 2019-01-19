@@ -1,0 +1,18 @@
+<h1>書籍を編集する</h1>
+
+<%= form_for :book, url: books_path(@book),method: :patch do |f|%> 
+	<p>
+		<%= f.label :title %><br>
+		<%= f.text_field :title%>
+	</p>
+	<p>
+		<%= f.label :text %><br>
+		<%= f.text_field :text%>
+	</p>
+
+	<p>
+		<%= f.submit %>
+	</p>
+<%  end %>
+
+<%= link_to '戻る',books_path %>

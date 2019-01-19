@@ -1,0 +1,9 @@
+<p>
+<strong>タイトル：</strong>
+<%= @book.title %>
+</p>
+
+<p>
+<strong>テキスト：</strong>
+<%= @book.text %>
+</p>
